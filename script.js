@@ -1,4 +1,4 @@
-// Thanks to http://bl.ocks.org/jfreels/6814721
+
 
 function tabulate(data,columns) {
 
@@ -31,7 +31,7 @@ function tabulate(data,columns) {
     return table;
 }
 
-d3.csv('presidents.csv',function (data) {
+d3.csv('https://raw.githubusercontent.com/mjdacs/mjdacs.github.io/master/presidents.csv?_sm_au_=iVVLS3mJBZH0BqS7',function (data) {
     let columns = ["Name","Height","Weight"]
     tabulate(data,columns)
 })
